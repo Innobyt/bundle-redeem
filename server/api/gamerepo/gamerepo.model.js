@@ -4,8 +4,8 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var schema = new Schema({
-    threshold   : type: Number,
-    gamename    : type: String,
+    threshold   : Number,
+    gamename    : String,
     gamekeys    : [Object]
 });
 
