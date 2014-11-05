@@ -31,11 +31,9 @@ exports.show = function(req, res) {
 
 // Creates a new thing in the DB.
 exports.create = function(req, res) {
-  console.log(req.body);
-  console.log('lalal 1');
   Thing.create(req.body, function(err, thing) {
     if(err) { return handleError(res, err); }
-    return res.json(thing);
+    return res.json(201, thing);
   });
 };
 
