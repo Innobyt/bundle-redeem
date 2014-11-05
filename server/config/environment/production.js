@@ -19,5 +19,26 @@ module.exports = {
             process.env.MONGOHQ_URL ||
             process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
             'mongodb://localhost/redemption'
+  },
+  // MongoDB connection options
+  mongo1: {
+    uri:    process.env.MONGOLAB_URI ||
+            process.env.MONGOHQ_URL ||
+            process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME || 
+            'mongodb://localhost/gamerepo-dev'
+  },  
+  // MongoDB connection options
+  mongo2: {
+    uri:    process.env.MONGOLAB_URI ||
+            process.env.MONGOHQ_URL ||
+            process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
+            'mongodb://localhost/gamebundle-dev'
+  },
+  // MongoDB connection options
+  mongo3: {
+    uri:    process.env.MONGOLAB_URI ||
+            process.env.MONGOHQ_URL ||
+            process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
+            'mongodb://localhost/gameredemption-dev'
   }
 };

@@ -1,0 +1,31 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Redemption</h1>
+    <p class="lead">enter description text here</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Form:</h1>
+    </div>
+  </div>
+
+  <form class="thing-form">
+    <label> First Name </label> <input type="text" id="firstname" class="form-control input-lg" placeholder="First Name" ng-model="formData.firstname">
+    <label> Last Name </label> <input type="text" id="lastname" class="form-control input-lg" placeholder="Last Name" ng-model="formData.lastname">
+    <label> Email </label> <input type="text" id="email" class="form-control input-lg" placeholder="Email" ng-model="formData.email">
+    <label> Redemption Code </label> <input type="text" id="redemptioncode" class="form-control input-lg" placeholder="RedemptionCode" ng-model="formData.redemptioncode">
+    <label> Used Status </label> <input type="text" id="usedstatus" class="form-control input-lg" placeholder="UsedStatus" ng-model="formData.usedstatus">
+    <button type="submit" class="btn btn-primary" ng-click="submit()">Add</button>
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p><a href="http://innobyt.com">Innobyt Redemption Web Application</a></p>
+  </div>
+</footer>
